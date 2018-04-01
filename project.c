@@ -75,3 +75,60 @@ void WaitingTime(int process[], int n,int burst[], int wt[], int quan)
           break;
     }
 }
+
+
+//turn around time from here
+
+void TurnAroundTime(int process[], int n,int burst[], int wt[], int temp[])
+{
+    int i;
+    for (i = 1; i <=n ; i++)
+        temp[i] = burst[i] + wt[i];
+}
+
+
+
+int main()
+{
+ 
+    int x,id,password,clock,clock1;
+    printf("\t\t\tWELCOME TO QUERY SESSION ");
+    printf("\n\nEnter the starting session time and ending session time");
+    printf("\n\nStarting Session at ::");
+	scanf("%d",&clock);
+	printf("\nEnd Session at ::");
+    scanf("%d",&clock1);
+    if(clock>=10 && clock1<=12)
+    {
+    	printf("\nQuery time is between %d ::",clock);
+	    printf("-- %d ::",clock1);
+	}
+	else
+	{
+		printf("\nYou can not log in this time");
+		printf("\nYou can log in between 10 to 12");
+		exit(0);
+	}
+    printf("\n\nEnter Your Log In Details\n");
+    printf("\nEnter Log In ID\n");
+    scanf("%d",&id);
+    printf("\nEnter log In Password\n");
+    scanf("%d",&password);
+    if(password==12345)
+    {
+    	printf("\n\nlogging In");
+	}
+	else{
+		printf("\nIncorrect Password Try again later");
+		exit(0);
+	}
+    sleep(2);
+    printf("\n\nLogged In");
+	printf("\nWELCOME SURESH YOU HAVE LOG IN");
+	sleep(2);
+	printf("\n\nStarting The Query Session");
+    printf("\n\nEnter number of query you want to enter : ");
+    scanf("%d",&x);
+    int process[x],process1[x];
+    int burst_time[x],burst_time1[x]; 
+
