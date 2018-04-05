@@ -132,3 +132,21 @@ int main()
     int process[x],process1[x];
     int burst_time[x],burst_time1[x]; 
 
+//for students 
+    printf("ENTER ARIVAL TIME OF STUDENTS : \n\n");
+    int i;
+    for(i=1;i<=x;i++)
+    {
+	printf("Enter arival time of student : %d\t",i);
+	scanf("%d",&process[i]);
+        printf("\n");
+    }
+    
+    printf("ENTER burst TIME OF STUDENTS: \n\n");
+    for(i=1;i<=x;i++)
+    {
+       printf("Enter burst time of student : %d\t",i);
+	scanf("%d",&burst_time[i]);
+	printf("\n");
+    }
+    
