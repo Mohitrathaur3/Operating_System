@@ -150,3 +150,24 @@ int main()
 	printf("\n");
     }
     
+    //for faculty
+    printf("ENTER ARIVAL TIME OF FACULT: \n\n");
+    for(i=1;i<=x;i++)
+    {
+        printf("Enter arival time of faculty : %d\t",i);
+	scanf("%d",&process1[i]);
+        printf("\n");
+    }
+
+    int n = sizeof process / sizeof process[0];
+
+   
+
+    printf("ENTER burst TIME FOR FACULTY : \n\n");
+    for(i=1;i<=x;i++)
+    {
+        printf("Enter burst time of student : %d\t",i);
+	scanf("%d",&burst_time1[i]);
+        printf("\n");
+    }
+    
