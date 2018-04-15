@@ -171,3 +171,15 @@ int main()
         printf("\n");
     }
     
+     printf("TIME QUANTUM USED process inside queue IS 5 :\n\n");
+    int quantum = 5;
+    printf("He will spend first 10 am to 11 am for handling students query: \n\n");
+    Average_Time(process, n, burst_time, quantum,'s'); 
+    n = sizeof process1 / sizeof process1[0];
+    printf("\n\n");
+   printf("He will spend first 11 am to 12 pm for handling Faculties query: \n\n");
+    printf("\n\n\n");
+    Average_Time(process1, n ,burst_time1,quantum,'f');
+    return 0;
+}
+
